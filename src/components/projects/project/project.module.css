@@ -1,0 +1,89 @@
+.container {
+    display: grid;
+    background-color: white;    
+}
+
+.container > div {
+    max-width: 600px;
+    text-align: center;
+}
+
+.container img[alt$="page"]{
+    width: 100%;
+    max-width: var(--portfolio-img)
+}
+
+.container h3 {
+    color: var(--colour-light);
+    font-size: 3.3rem;
+}
+
+.container p {
+    margin-left: 10px;
+    margin-right: 10px;
+
+    color: rgb(99, 99, 99);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.container a {
+    display: inline-flex;
+
+    margin: 20px;
+    padding: 5px;
+    border: 2px solid var(--colour-dark);
+    border-radius: 5px;
+
+    color: var(--colour-dark);
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.container a:visited {
+    color: purple;
+    border: 2px solid purple;
+}
+
+.container a:hover {
+    color: white;
+    background-color: var(--colour-dark);
+}
+
+.container ul {
+    margin-top: 40px;
+}
+
+.container ul img {
+    height: 75px;
+    z-index: 5000;
+}
+
+.container ul {
+    all:unset;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 40px;
+}
+
+.container li {
+    all: unset;
+    height: fit-content;
+    z-index: 200;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        height: 500px;
+        grid-template-columns: calc(var(--portfolio-img) + 50px) 1fr;
+    }
+
+    .container div {
+        padding: 20px;
+        border-radius: 5px;
+    }
+}

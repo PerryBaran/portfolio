@@ -1,0 +1,51 @@
+.container {
+    height: 100vh;
+    padding-bottom: 40px;
+
+    background-color: var(--colour-light);
+}
+
+h1 {
+    color: white;
+
+    height: 270px;
+
+    font-family: 'Roboto Mono', monospace;
+    font-size: min(15rem, 15vw);
+    text-align: center;
+}
+
+h1 span{
+    color: var(--colour-dark);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container p {
+    width: 100%;
+    
+    font-size: min(1.5rem, 4vw);
+    font-weight: bold;
+    text-align: center;
+}
+
+.container p > a {
+    color: white;
+    text-decoration: none;
+}
+
+.gridHeading {
+    display: grid;
+    grid-template-rows: 1fr 100px;
+
+    height: 100%;
+    width: 100%;
+}
+
+.centerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
