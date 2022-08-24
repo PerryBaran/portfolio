@@ -11,20 +11,27 @@
 }
 
 h1 {
-    color: white;
-
     height: 270px;
+    width: 100%;
 
     font-family: 'Roboto Mono', monospace;
-    font-size: min(15rem, 15vw);
+    font-size: min(15rem, 14vw);
     text-align: center;
 
     text-shadow: 0 0 10px black;
+    overflow: hidden;
 }
 
-h1 span{
+.left {
+    position: relative;
+    color: white;
+    animation: slideLeft 3s cubic-bezier(0.25, 0.91, 0.47, 0.99);
+}
+
+.right {
+    position: relative;
     color: var(--colour-light);
-    font-family: 'Roboto Mono', monospace;
+    animation: slideRight 3s cubic-bezier(0.25, 0.91, 0.47, 0.99);
 }
 
 .container p {
@@ -61,15 +68,59 @@ h1 span{
     height: 100%;
 }
 
-@media screen and (max-width: 700px) {
-    h1 {
-        font-size: 8rem;
+@keyframes slideLeft {
+    0% {
+        right: 50vw;
     }
 
-    h1 span{
-        display: block;
-
-        position: relative;
-        bottom: 50px;
+    100% {
+        right: 0;
     }
 }
+
+@keyframes slideRight {
+    0% {
+        left: 50vw;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 7rem;
+    }
+
+    .left {
+        display: block;
+        top: 24px;
+    }
+
+    .right {
+        display: block;
+        bottom: 24px;
+    }
+
+    @keyframes slideLeft {
+        0% {
+            right: 90vw;
+        }
+    
+        100% {
+            right: 0;
+        }
+    }
+    
+    @keyframes slideRight {
+        0% {
+            left: 90vw;
+        }
+    
+        100% {
+            left: 0;
+        }
+    }
+}
+

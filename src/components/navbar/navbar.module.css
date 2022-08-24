@@ -1,5 +1,5 @@
 :root {
-    --background-white: rgba(255, 255, 255, 0.9);
+    --background-white: rgba(255, 255, 255, 0.95);
     --navbar-height: 40px;
 }
 
@@ -24,31 +24,32 @@
 }
 
 /*desktop*/
-@media screen and (min-width: 800px) {
-    .buttonContainer {
-        display: none;
-    }
-
-    .linkContainer {
-        height: var(--navbar-height);
-        width: calc(100% - var(--scroll-bar-width));
-        padding-right: 10px;
-        padding-left: 100px;
-
-        text-align: right;
-
-        z-index: 10000;
-    }
-
-    .linkContainer a {
-        margin-left: 40px;
-        font-size: 2.2rem;
-    }
+.buttonContainer {
+    display: none;
 }
+
+.linkContainer {
+    height: var(--navbar-height);
+    width: calc(100% - var(--scroll-bar-width));
+    padding-right: 10px;
+    padding-left: 100px;
+
+    text-align: right;
+
+    z-index: 10000;
+}
+
+.linkContainer a {
+    margin-left: 40px;
+    font-size: 2.2rem;
+}
+
 
 /*mobile*/
 @media screen and (max-width: 800px) {
     .buttonContainer {
+        display: block;
+
         position: fixed;
         top: 0;
 
@@ -75,32 +76,48 @@
         opacity: 0.8;
     }
 
-    .linkContainer {
+    .navContainer {
+        position: absolute;
         top: var(--navbar-height);
+        width: calc(100% - var(--scroll-bar-width));
+        overflow: hidden;
+    }
 
+    .linkContainer {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        display: flex;
         flex-direction: column;
         justify-content: space-evenly;
 
-        height: calc(100% - var(--navbar-height));
-        width: calc(100% - var(--scroll-bar-width));
+        height: calc(50% - var(--navbar-height));
+        width: 100%;
+
+        transition-duration: 500ms;
 
         z-index: 100000000;
+        overflow: hidden;
     }
 
     .linkContainer a {
+        position: relative;
         padding-right: 5px;
+        left: 0;
 
         color: var(--colour-light);
 
         text-align: right;
-        font-size: min(5rem, 18vw)
-    }
-
-    .flex {
-        display: flex;
+        font-size: min(5rem, 18vw);
+        transition-duration: 500ms;
     }
 
     .hidden {
-        display: none;
+        top: -500px;
+    }
+
+    .hidden a{
+        left: 100vw;
     }
 }

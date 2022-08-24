@@ -8,7 +8,7 @@ function Home() {
             <h2>Home</h2>
             <div className={style.gridHeading}>
                 <div className={style.centerFlex}>
-                    <h1>PERRY<span>BARAN</span></h1>
+                    <h1><span className={style.left}>PERRY</span><span className={style.right}>BARAN</span></h1>
                 </div>
                 <div>
                     <p>Front-End Web Developer</p>

@@ -3,7 +3,7 @@
   margin: auto;
   -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
   font-family: 'Dosis', sans-serif;
-  color: var(--almost-black)
+  color: var(--almost-black);
 }
 
 :root {
@@ -30,12 +30,12 @@ body > div {
 
 ::-webkit-scrollbar-track {
   background: none;
-  background-color: var(--colour-light);
-  border-left: 2px solid white;
+  background-color: rgb(244, 244, 244);
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--colour-dark);
+  border-radius: 2px;
 }
 
 button {
@@ -60,7 +60,7 @@ h2 {
   padding-top: 2px;
   padding-left: 5px;
 
-
+  color: var(--colour-dark);
   font-family: 'Roboto Mono', monospace;
   font-size: 2rem;
   font-weight: 1000;
