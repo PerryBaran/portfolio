@@ -1,11 +1,12 @@
 :root {
     --background-white: rgba(255, 255, 255, 0.95);
-    --navbar-height: 40px;
+    --navbar-height: 50px;
 }
 
 .linkContainer {
     position: fixed;
     background-color: var(--background-white);
+    overflow: hidden;
 }
 
 .linkContainer a {
@@ -20,7 +21,9 @@
 }
 
 .linkContainer a:hover {
-    text-decoration: underline overline;
+    color: var(--colour-dark);
+    transition-delay: 0ms;
+    transition-duration: 50ms;
 }
 
 /*desktop*/
@@ -32,7 +35,7 @@
     height: var(--navbar-height);
     width: calc(100% - var(--scroll-bar-width));
     padding-right: 10px;
-    padding-left: 100px;
+    padding-left: 200px;
 
     text-align: right;
 
@@ -40,13 +43,15 @@
 }
 
 .linkContainer a {
+    position: relative;
+    bottom: 7px;
     margin-left: 40px;
-    font-size: 2.2rem;
+    font-size: 3rem;
 }
 
 
 /*mobile*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
     .buttonContainer {
         display: block;
 
@@ -66,7 +71,7 @@
 
     .buttonContainer button {
         width: fit-content;
-        margin-top: 5px;
+        margin-top: 10px;
     }
 
     .buttonContainer button > img {
@@ -101,6 +106,15 @@
         overflow: hidden;
     }
 
+    .hidden {
+        top: -500px;
+    }
+
+    :nth-child(1) {--nth-child: 125ms}
+    :nth-child(2) {--nth-child: 250ms}
+    :nth-child(3) {--nth-child: 375ms}
+    :nth-child(4) {--nth-child: 500ms}
+
     .linkContainer a {
         position: relative;
         padding-right: 5px;
@@ -111,13 +125,11 @@
         text-align: right;
         font-size: min(5rem, 18vw);
         transition-duration: 500ms;
-    }
-
-    .hidden {
-        top: -500px;
+        transition-delay: var(--nth-child);
     }
 
     .hidden a{
         left: 100vw;
+        transition-delay: 0ms;
     }
 }

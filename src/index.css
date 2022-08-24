@@ -11,7 +11,7 @@
   --colour-light: rgb(0, 158, 250);
   --colour-dark: rgb(0, 47, 78);
   --portfolio-img: 800px;
-  --scroll-bar-width: 15px
+  --scroll-bar-width: 15px;
 }
 
 body {
@@ -54,15 +54,12 @@ h2 {
   position: sticky;
   top: 0px;
   left: 0px;
-
-  height: 30px;
   
-  padding-top: 2px;
   padding-left: 5px;
 
   color: var(--colour-dark);
   font-family: 'Roboto Mono', monospace;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 1000;
   text-transform:uppercase;
 

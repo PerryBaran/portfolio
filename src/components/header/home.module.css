@@ -13,25 +13,28 @@
 h1 {
     height: 270px;
     width: 100%;
-
-    font-family: 'Roboto Mono', monospace;
+    
     font-size: min(15rem, 14vw);
     text-align: center;
+    font-weight: 1000;
 
     text-shadow: 0 0 10px black;
     overflow: hidden;
 }
 
-.left {
+h1 span {
     position: relative;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.left {
     color: white;
-    animation: slideLeft 3s cubic-bezier(0.25, 0.91, 0.47, 0.99);
+    animation: slideLeft 2s cubic-bezier(0.25, 0.91, 0.47, 0.99);
 }
 
 .right {
-    position: relative;
     color: var(--colour-light);
-    animation: slideRight 3s cubic-bezier(0.25, 0.91, 0.47, 0.99);
+    animation: slideRight 2s cubic-bezier(0.25, 0.91, 0.47, 0.99);
 }
 
 .container p {
@@ -53,9 +56,12 @@ h1 {
 
 .gridHeading {
     display: grid;
-    grid-template-rows: 1fr 100px;
+    grid-template-rows: 1fr 120px;
 
-    height: 100%;
+    position: relative;
+    top: var(--navbar-height);
+
+    height: calc(100% - var(--navbar-height));
     width: 100%;
 }
 
@@ -95,12 +101,12 @@ h1 {
 
     .left {
         display: block;
-        top: 24px;
+        top: 31px;
     }
 
     .right {
         display: block;
-        bottom: 24px;
+        bottom: 31px;
     }
 
     @keyframes slideLeft {
