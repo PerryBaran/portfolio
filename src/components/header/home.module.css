@@ -58,12 +58,10 @@ h1 span {
     display: grid;
     grid-template-rows: 1fr 120px;
 
-    position: relative;
-    top: var(--navbar-height);
-
-    height: calc(100% - var(--navbar-height));
+    height: 100%;
     width: 100%;
 }
+
 
 .centerFlex {
     display: flex;

@@ -1,5 +1,5 @@
 :root {
-    --background-white: rgba(255, 255, 255, 0.95);
+    --background-white: rgba(255, 255, 255, 0.9);
     --navbar-height: 50px;
 }
 
@@ -72,13 +72,13 @@
     .buttonContainer button {
         width: fit-content;
         margin-top: 10px;
+        
     }
 
     .buttonContainer button > img {
         aspect-ratio: 1;
         height: 30px;
-
-        opacity: 0.8;
+        filter: opacity(0.75) drop-shadow(0 0 0 var(--colour-light));
     }
 
     .navContainer {
@@ -126,10 +126,12 @@
         font-size: min(5rem, 18vw);
         transition-duration: 500ms;
         transition-delay: var(--nth-child);
+        transition-property: left;
     }
 
     .hidden a{
         left: 100vw;
         transition-delay: 0ms;
+        transition-property: left;
     }
 }

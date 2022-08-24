@@ -55,6 +55,7 @@ h2 {
   top: 0px;
   left: 0px;
   
+  height: var(--navbar-height);
   padding-left: 5px;
 
   color: var(--colour-dark);
