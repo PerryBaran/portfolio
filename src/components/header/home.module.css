@@ -5,11 +5,6 @@
     padding-bottom: 40px;
 }
 
-.container > video {
-    height: 100%;
-    width: 100%;
-}
-
 h1 {
     height: 270px;
     width: 100%;
@@ -55,8 +50,11 @@ h1 span {
 }
 
 .gridHeading {
+    position: relative;
+    top: -10px;
+
     display: grid;
-    grid-template-rows: 1fr 120px;
+    grid-template-rows: var(--navbar-height) 1fr var(--navbar-height);
 
     height: 100%;
     width: 100%;
@@ -74,7 +72,7 @@ h1 span {
 
 @keyframes slideLeft {
     0% {
-        right: 50vw;
+        right: 100vw;
     }
 
     100% {
@@ -84,7 +82,7 @@ h1 span {
 
 @keyframes slideRight {
     0% {
-        left: 50vw;
+        left: 100vw;
     }
 
     100% {
@@ -105,26 +103,6 @@ h1 span {
     .right {
         display: block;
         bottom: 31px;
-    }
-
-    @keyframes slideLeft {
-        0% {
-            right: 90vw;
-        }
-    
-        100% {
-            right: 0;
-        }
-    }
-    
-    @keyframes slideRight {
-        0% {
-            left: 90vw;
-        }
-    
-        100% {
-            left: 0;
-        }
     }
 }
 

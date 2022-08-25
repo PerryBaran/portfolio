@@ -14,7 +14,9 @@
 }
 
 .container h3 {
+    margin: 10px;
     color: var(--colour-light);
+    font-family: 'Roboto Mono', monospace;
     font-size: 3.3rem;
 }
 

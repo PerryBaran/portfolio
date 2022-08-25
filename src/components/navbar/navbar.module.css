@@ -22,33 +22,37 @@
 
 .linkContainer a:hover {
     color: var(--colour-dark);
+
     transition-delay: 0ms;
     transition-duration: 50ms;
 }
 
 /*desktop*/
-.buttonContainer {
-    display: none;
+@media screen and (min-width: 1100px) {
+    .buttonContainer {
+        display: none;
+    }
+
+    .linkContainer {
+        height: var(--navbar-height);
+        width: calc(100% - var(--scroll-bar-width));
+        padding-right: 10px;
+        padding-left: 200px;
+
+        text-align: right;
+
+        z-index: 10000;
+    }
+
+    .linkContainer a {
+        position: relative;
+        bottom: 7px;
+
+        margin-left: 40px;
+
+        font-size: 3rem;
+    }
 }
-
-.linkContainer {
-    height: var(--navbar-height);
-    width: calc(100% - var(--scroll-bar-width));
-    padding-right: 10px;
-    padding-left: 200px;
-
-    text-align: right;
-
-    z-index: 10000;
-}
-
-.linkContainer a {
-    position: relative;
-    bottom: 7px;
-    margin-left: 40px;
-    font-size: 3rem;
-}
-
 
 /*mobile*/
 @media screen and (max-width: 1100px) {
@@ -70,28 +74,28 @@
     }
 
     .buttonContainer button {
-        width: fit-content;
         margin-top: 10px;
-        
     }
 
     .buttonContainer button > img {
         aspect-ratio: 1;
         height: 30px;
+
         filter: opacity(0.75) drop-shadow(0 0 0 var(--colour-light));
     }
 
     .navContainer {
         position: absolute;
         top: var(--navbar-height);
+
         width: calc(100% - var(--scroll-bar-width));
+
         overflow: hidden;
     }
 
     .linkContainer {
         position: relative;
         top: 0;
-        left: 0;
 
         display: flex;
         flex-direction: column;
@@ -110,27 +114,26 @@
         top: -500px;
     }
 
-    :nth-child(1) {--nth-child: 125ms}
-    :nth-child(2) {--nth-child: 250ms}
-    :nth-child(3) {--nth-child: 375ms}
-    :nth-child(4) {--nth-child: 500ms}
+    :nth-child(1) {--nth-delay: 125ms}
+    :nth-child(2) {--nth-delay: 250ms}
+    :nth-child(3) {--nth-delay: 375ms}
+    :nth-child(4) {--nth-delay: 500ms}
 
     .linkContainer a {
         position: relative;
-        padding-right: 5px;
         left: 0;
-
-        color: var(--colour-light);
-
+        
+        font-size: 5rem;
         text-align: right;
-        font-size: min(5rem, 18vw);
+
         transition-duration: 500ms;
-        transition-delay: var(--nth-child);
+        transition-delay: var(--nth-delay);
         transition-property: left;
     }
 
     .hidden a{
         left: 100vw;
+
         transition-delay: 0ms;
         transition-property: left;
     }

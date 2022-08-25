@@ -3,6 +3,11 @@
     background-color: white;
 }
 
+.container h3 {
+    margin: 5px;
+    font-size: 1.5rem;
+}
+
 .container a {
     z-index: -10;
 }
