@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.f1f23f64.css",
+    "main.js": "/portfolio/static/js/main.8b47af71.js",
+    "static/media/home.mp4": "/portfolio/static/media/home.19695531fc30cb7d036c.mp4",
+    "static/media/Profile.jpg": "/portfolio/static/media/Profile.5c4dc7cc94d92aef9730.jpg",
+    "static/media/DoDL.jpg": "/portfolio/static/media/DoDL.71f0280836f574bb2a9b.jpg",
+    "static/media/Weather App.jpg": "/portfolio/static/media/Weather App.9a79db32814d9062197c.jpg",
+    "static/media/Online Store.jpg": "/portfolio/static/media/Online Store.186d15b9e48f00ad947b.jpg",
+    "static/media/Jenico.jpg": "/portfolio/static/media/Jenico.ee0f22cf0301271c4894.jpg",
+    "static/media/Firebase.png": "/portfolio/static/media/Firebase.6f1a1b336c5d7f5b6a79.png",
+    "static/media/React.png": "/portfolio/static/media/React.1e5639fdfd7c944093d3.png",
+    "static/media/Jest.png": "/portfolio/static/media/Jest.809768de8350fa5f6a21.png",
+    "static/media/CSS3.png": "/portfolio/static/media/CSS3.a2c1593a062d8edf96a9.png",
+    "static/media/Typescript.png": "/portfolio/static/media/Typescript.af108db04a54d784da9b.png",
+    "static/media/JavaScript.png": "/portfolio/static/media/JavaScript.85d8205a84b3b849ec83.png",
+    "index.html": "/portfolio/index.html",
+    "main.f1f23f64.css.map": "/portfolio/static/css/main.f1f23f64.css.map",
+    "main.8b47af71.js.map": "/portfolio/static/js/main.8b47af71.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1f23f64.css",
+    "static/js/main.8b47af71.js"
+  ]
+}
