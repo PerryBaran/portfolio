@@ -10,7 +10,6 @@ const BackgroundVideo = (props: { src: string; }) => {
                 muted
                 loop
                 src={src}
-                data-testid='video'
             />
       </div>
     );
