@@ -49,17 +49,16 @@ h1 span {
     text-shadow: 0 0 10px black;
 }
 
-.gridHeading {
+.gridContainer {
     position: relative;
-    top: -10px;
+    top: var(--h2-offset);
 
     display: grid;
     grid-template-rows: var(--navbar-height) 1fr var(--navbar-height);
 
-    height: 100%;
+    height: calc(100% - var(--h2-offset));
     width: 100%;
 }
-
 
 .centerFlex {
     display: flex;
@@ -92,17 +91,17 @@ h1 span {
 
 @media screen and (max-width: 700px) {
     h1 {
-        font-size: 7rem;
+        font-size: 120px;
     }
 
     .left {
         display: block;
-        top: 31px;
+        top: 35px;
     }
 
     .right {
         display: block;
-        bottom: 31px;
+        bottom: 35px;
     }
 }
 

@@ -16,6 +16,7 @@
         
     font-family: 'Roboto Mono', monospace;
     text-transform: uppercase;
+    font-weight: 100;
 
     cursor: pointer;
 }
@@ -28,7 +29,7 @@
 }
 
 /*desktop*/
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1200px) {
     .buttonContainer {
         display: none;
     }
@@ -46,16 +47,16 @@
 
     .linkContainer a {
         position: relative;
-        bottom: 7px;
+        bottom: 11px;
 
         margin-left: 40px;
 
-        font-size: 3rem;
+        font-size: 50px;
     }
 }
 
 /*mobile*/
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
     .buttonContainer {
         display: block;
 

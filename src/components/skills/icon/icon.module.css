@@ -1,0 +1,20 @@
+.container {
+    height: 170px;
+    width: 140px;
+    display: grid;
+    grid-template-rows: 1fr 20px;
+}
+
+.container img {
+    height: 100px; 
+    transition-duration: 300ms;
+}
+
+.container figcaption {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.container img:hover {
+    height: 120px;
+}

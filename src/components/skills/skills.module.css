@@ -4,8 +4,9 @@
 }
 
 .container h3 {
-    margin: 5px;
-    font-size: 1.5rem;
+    width: calc(100% - 20px);
+    max-width: 1800px;
+    font-size: 2rem;
 }
 
 .container a {
@@ -15,27 +16,6 @@
 .container section {
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-.container figure {
-    height: 170px;
-    width: 140px;
-    display: grid;
-    grid-template-rows: 1fr 20px;
-}
-
-.container figure img {
-    height: 100px; 
-    transition-duration: 300ms;
-}
-
-.container figcaption {
-    font-size: 1.1rem;
-    text-align: center;
-}
-
-.container figure img:hover {
-    height: 120px;
 }
 
 .iconContainer {
