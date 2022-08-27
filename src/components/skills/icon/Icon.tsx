@@ -1,12 +1,13 @@
 import style from './icon.module.css';
+import { IconInfo } from '../../../Interfaces';
 
-function Skill(props: {src: string, text: string}) {
-    const {src, text} = props
+function Skill(props: {icon: IconInfo}) {
+    const {icon} = props
 
     return (
         <figure className={style.container}>
-            <img src={src} alt={`${text} logo`}/>
-            <figcaption>{text}</figcaption>
+            <img src={icon.src} alt={`${icon.name} logo`}/>
+            <figcaption>{icon.name}</figcaption>
         </figure>
     );
 }

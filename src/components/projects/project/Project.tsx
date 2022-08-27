@@ -1,12 +1,11 @@
 import style from './project.module.css';
-
-
+import { IconInfo } from '../../../Interfaces';
 
 interface Props {
     projectSrc: string,
     projectTitle: string,
     projectDescription: string,
-    skills: {src: string, alt: string}[],
+    skills: IconInfo[],
     repohref: string,
     livehref: string
 }
@@ -29,7 +28,7 @@ function Project(props: Props) {
                 <p>{projectDescription}</p>
                 <ul>
                     {skills.map(((skill, i) => {
-                        return <li key={i}><img src={skill.src} alt={skill.alt}/></li>
+                        return <li key={i}><img src={skill.src} alt={skill.name}/></li>
                     }))}
                 </ul>
                 <a href={repohref} target="_blank" rel="noreferrer">Repository</a>

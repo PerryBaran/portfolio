@@ -12,7 +12,7 @@
   --colour-dark: rgb(0, 47, 78);
   --portfolio-img: 800px;
   --scroll-bar-width: 15px;
-  --h2-offset: -24px;
+  --h2-offset: -10px;
 }
 
 body {
@@ -62,7 +62,7 @@ h2 {
 
   color: var(--colour-dark);
   font-family: 'Roboto Mono', monospace;
-  font-size: 71px;
+  font-size: 50px;
   font-weight: 1000;
   text-transform:uppercase;
 

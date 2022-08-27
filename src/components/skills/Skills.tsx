@@ -9,19 +9,19 @@ function Skills() {
             <section>
                 <h3>Main Skills</h3>
                 <div className={style.iconContainer}>
-                    <Icon src={JavaScript} text='JavaScript'/>
-                    <Icon src={React} text='React'/>
-                    <Icon src={TypeScript} text='TypeScript'/>
+                    <Icon icon={JavaScript}/>
+                    <Icon icon={React}/>
+                    <Icon icon={TypeScript}/>
                 </div>
             </section>
             <section>
                 <h3>Other Skills</h3>
                 <div className={style.iconContainer}>
-                    <Icon src={HTML5} text='HTML5'/>
-                    <Icon src={CSS3} text='CSS3'/>
-                    <Icon src={Jest} text='Jest'/>
-                    <Icon src={GitHub} text='GitHub'/>
-                    <Icon src={Firebase} text='Firebase'/>
+                    <Icon icon={HTML5}/>
+                    <Icon icon={CSS3}/>
+                    <Icon icon={Jest}/>
+                    <Icon icon={GitHub}/>
+                    <Icon icon={Firebase}/>
                 </div>
             </section>
         </section>
