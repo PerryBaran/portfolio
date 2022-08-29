@@ -1,11 +1,11 @@
 import style from './project.module.css';
-import { IconInfo } from '../../../Interfaces';
+import { LogoInfo } from '../../../Interfaces';
 
 interface Props {
     projectSrc: string,
     projectTitle: string,
     projectDescription: string,
-    skills: IconInfo[],
+    skills: LogoInfo[],
     repohref: string,
     livehref: string
 }

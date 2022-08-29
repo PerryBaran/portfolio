@@ -1,7 +1,7 @@
 import style from './icon.module.css';
-import { IconInfo } from '../../../Interfaces';
+import { LogoInfo } from '../../../Interfaces';
 
-function Skill(props: {icon: IconInfo}) {
+function Skill(props: {icon: LogoInfo}) {
     const {icon} = props
 
     return (

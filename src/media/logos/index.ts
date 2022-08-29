@@ -1,6 +1,6 @@
-import { IconInfo } from "../../Interfaces";
+import { LogoInfo } from "../../Interfaces";
 
-class Icon implements IconInfo {
+class Logo implements LogoInfo {
     readonly src: string
     readonly name: string
     constructor(url: string, name: string) {
@@ -9,14 +9,14 @@ class Icon implements IconInfo {
     };
 };
 
-const CSS3 = new Icon(require('./CSS3.png'), 'CSS3');
-const Firebase = new Icon(require('./Firebase.png'), 'Firebase');
-const GitHub = new Icon(require('./Github.png'), 'GitHub');
-const HTML5 = new Icon(require('./HTML5.png'), 'HTML5');
-const Jest = new Icon(require('./Jest.png'), 'Jest');
-const JavaScript = new Icon(require('./JavaScript.png'), 'JavaScript');
-const React = new Icon(require('./React.png'), 'React');
-const TypeScript = new Icon(require('./Typescript.png'), 'Typescript');
+const CSS3 = new Logo(require('./CSS3.png'), 'CSS3');
+const Firebase = new Logo(require('./Firebase.png'), 'Firebase');
+const GitHub = new Logo(require('./Github.png'), 'GitHub');
+const HTML5 = new Logo(require('./HTML5.png'), 'HTML5');
+const Jest = new Logo(require('./Jest.png'), 'Jest');
+const JavaScript = new Logo(require('./JavaScript.png'), 'JavaScript');
+const React = new Logo(require('./React.png'), 'React');
+const TypeScript = new Logo(require('./Typescript.png'), 'Typescript');
 
 
 export { CSS3, Firebase, GitHub, HTML5, Jest, JavaScript, React, TypeScript };

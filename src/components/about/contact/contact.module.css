@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.container figure {
+    text-align: center;
+}
+
+.container img {
+    height: 50px;
+    opacity: 0.6;
+    border-radius: 0;
+    transition-duration: 500ms;
+}
+
+.container figcaption {
+    font-size: 1.2rem;
+    transition-duration: 500ms;
+}
+
+.container:hover img {
+    opacity: 1;
+}
+
+.container:hover figcaption{
+    color: black;
+}

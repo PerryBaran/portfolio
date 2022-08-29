@@ -23,6 +23,10 @@
     z-index: -99;
 }
 
+.hide {
+    opacity: 0;
+}
+
 .fadeIn {
     animation: fadeIn 2s;
 }

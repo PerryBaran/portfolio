@@ -12,7 +12,7 @@ const BackgroundVideo = (props: { src: string; }) => {
                 muted
                 loop
                 src={src}
-                className={loaded ? style.fadeIn : undefined}
+                className={loaded ? style.fadeIn : style.hide}
                 onCanPlay={() => setLoaded(true)}
             />
       </div>
