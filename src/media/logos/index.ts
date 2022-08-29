@@ -17,6 +17,8 @@ const Jest = new Logo(require('./Jest.png'), 'Jest');
 const JavaScript = new Logo(require('./JavaScript.png'), 'JavaScript');
 const React = new Logo(require('./React.png'), 'React');
 const TypeScript = new Logo(require('./Typescript.png'), 'Typescript');
+const Git = new Logo(require('./Git.png'), 'Git');
+const Node = new Logo(require('./Node-js.png'), 'Node.js');
 
 
-export { CSS3, Firebase, GitHub, HTML5, Jest, JavaScript, React, TypeScript };
+export { CSS3, Firebase, GitHub, HTML5, Jest, JavaScript, React, TypeScript, Git, Node };

@@ -1,6 +1,6 @@
 import style from './skills.module.css';
 import Icon from './icon/Icon';
-import {CSS3, Firebase, GitHub, HTML5, Jest, JavaScript, React, TypeScript} from '../../media/logos/index';
+import { CSS3, Firebase, GitHub, HTML5, Jest, JavaScript, React, TypeScript, Git, Node } from '../../media/logos/index';
 
 function Skills() {
     return(
@@ -12,6 +12,7 @@ function Skills() {
                     <Icon icon={JavaScript}/>
                     <Icon icon={React}/>
                     <Icon icon={TypeScript}/>
+                    <Icon icon={Node}/>
                 </div>
             </section>
             <section>
@@ -20,6 +21,7 @@ function Skills() {
                     <Icon icon={HTML5}/>
                     <Icon icon={CSS3}/>
                     <Icon icon={Jest}/>
+                    <Icon icon={Git}/>
                     <Icon icon={GitHub}/>
                     <Icon icon={Firebase}/>
                 </div>

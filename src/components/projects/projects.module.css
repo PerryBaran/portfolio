@@ -8,7 +8,7 @@
 
 @media screen and (min-width: 1200px) {
     .container section:nth-of-type(2n) {
-        grid-template-columns: 1fr 850px;
+        grid-template-columns: 1fr 1fr;
     }
 
     .container section:nth-of-type(2n) img {

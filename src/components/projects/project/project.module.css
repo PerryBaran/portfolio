@@ -81,7 +81,7 @@
 @media screen and (min-width: 1200px) {
     .container {
         height: 500px;
-        grid-template-columns: calc(var(--portfolio-img) + 50px) 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .container div {
