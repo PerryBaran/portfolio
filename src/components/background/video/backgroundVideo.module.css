@@ -21,6 +21,9 @@
     height: 100%;
 
     z-index: -99;
+}
+
+.fadeIn {
     animation: fadeIn 2s;
 }
 

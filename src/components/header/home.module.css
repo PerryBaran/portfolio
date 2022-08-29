@@ -52,7 +52,7 @@ h1 span {
     top: var(--h2-offset);
 
     display: grid;
-    grid-template-rows: var(--navbar-height) 1fr var(--navbar-height);
+    grid-template-rows: var(--navbar-height) 1fr 100px;
 
     height: calc(100% - var(--h2-offset));
     width: 100%;
