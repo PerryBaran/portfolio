@@ -1,17 +1,9 @@
-.container section:nth-of-type(2n) {
-    background-color: var(--colour-light)
-}
+.container > div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
-.container section:nth-of-type(2n) p, .container section:nth-of-type(2n) h3 {
-    color: white;
-}
-
-@media screen and (min-width: 1200px) {
-    .container section:nth-of-type(2n) {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .container section:nth-of-type(2n) img {
-        order: 1;
-    }
+    width: 100%;
+    
+    overflow: visible;
 }

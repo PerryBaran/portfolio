@@ -1,6 +1,9 @@
 .container {
-    display: grid;
-    background-color: white;    
+    background-color: white;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 20px black;
+    margin: 20px;
 }
 
 .container > div {
@@ -10,7 +13,6 @@
 
 .container img[alt$="page"]{
     width: 100%;
-    max-width: var(--portfolio-img)
 }
 
 .container h3 {
@@ -18,6 +20,7 @@
     color: var(--colour-light);
     font-family: 'Roboto Mono', monospace;
     font-size: 3.3rem;
+    text-align: center;
 }
 
 .container p {
@@ -34,19 +37,13 @@
 
     margin: 20px;
     padding: 5px;
-    border: 2px solid var(--colour-dark);
-    border-radius: 5px;
+    border: 1px solid black;
 
-    color: var(--colour-dark);
-
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: min(1.5rem, 4vw);
+    font-weight: 100;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
     text-decoration: none;
-}
-
-.container a:visited {
-    color: purple;
-    border: 2px solid purple;
 }
 
 .container a:hover {
@@ -76,16 +73,4 @@
     all: unset;
     height: fit-content;
     z-index: 200;
-}
-
-@media screen and (min-width: 1200px) {
-    .container {
-        height: 500px;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .container div {
-        padding: 20px;
-        border-radius: 5px;
-    }
 }
