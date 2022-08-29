@@ -15,7 +15,7 @@ function About() {
                         love with it. Currently, I am a studying full-stack web development at Manchester Codes, 
                         with the aim of taking my hobby for coding into a career in web-development. When I'm not coding, you can find me 
                         making <a href="https://perrybaran.github.io/jenico/" target="_blank" rel="noreferrer">electronic music</a> playing
-                        video games, bouldering or camping with my friends.
+                        video games or bouldering.
                     </p>
                     <section className={style.contact}>
                         <Contact
