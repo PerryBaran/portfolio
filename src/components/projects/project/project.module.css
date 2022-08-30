@@ -1,9 +1,10 @@
 .container {
-    background-color: white;
     width: 100%;
     max-width: 800px;
-    box-shadow: 0 0 20px black;
     margin: 20px;
+
+    background-color: white;
+    box-shadow: 0 0 20px black;
 }
 
 .container > div {
@@ -17,7 +18,9 @@
 
 .container h3 {
     margin: 10px;
+
     color: var(--colour-light);
+
     font-family: 'Roboto Mono', monospace;
     font-size: 3.3rem;
     text-align: center;
@@ -28,6 +31,7 @@
     margin-right: 10px;
 
     color: rgb(99, 99, 99);
+
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -43,7 +47,6 @@
     font-weight: 100;
     font-family: 'Roboto Mono', monospace;
     text-transform: uppercase;
-    text-decoration: none;
 }
 
 .container a:hover {
@@ -62,6 +65,7 @@
 
 .container ul {
     all:unset;
+
     display: flex;
     justify-content: space-around;
     align-items: center;

@@ -48,13 +48,12 @@ h1 span {
 }
 
 .gridContainer {
-    position: relative;
-    top: var(--h2-offset);
-
     display: grid;
-    grid-template-rows: var(--navbar-height) 1fr 100px;
+    grid-template-rows: var(--navbar-height) 1fr 100px;    
 
-    height: calc(100% - var(--h2-offset));
+    position: relative;
+
+    height: 100%;
     width: 100%;
 }
 

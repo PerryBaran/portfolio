@@ -9,8 +9,9 @@
 
 .container img {
     height: 45px;
-    opacity: 0.6;
     border-radius: 0;
+
+    opacity: 0.6;
     transition-duration: 500ms;
 }
 

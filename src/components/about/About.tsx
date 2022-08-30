@@ -1,41 +1,43 @@
 import style from './about.module.css';
-import Contact from './contact/Contact';
+import Link from './link/Link';
 import { GitHub } from '../../media/logos/index';
-import at from '../../media/icons/at.png';
-import cv from '../../media/icons/cv.png';
+import { cv, at } from '../../media/icons/index';
+import { profile } from '../../media/images/index';
 
 function About() {
     return (
         <section id="about" className={style.container}>
-            <h2>About</h2>
-            <div>
+            <div className='sticky'>
+                <h2>About</h2>
+            </div>
+            <div className={style.content}>
                 <div>
-                    <p>Hi, I'm Perry, a front-end web develop based in Leeds. I started my coding journey in 2021, 
+                    <p>Hi, I'm Perry, a full-stack web developer based in Leeds. I started my coding journey in 2021, 
                         following the Oden Project (a free online course), and quickly fell in 
                         love with it. Currently, I am a studying full-stack web development at Manchester Codes, 
                         with the aim of taking my hobby for coding into a career in web-development. When I'm not coding, you can find me 
                         making <a href="https://perrybaran.github.io/jenico/" target="_blank" rel="noreferrer">electronic music</a> playing
-                        video games or bouldering.
+                        a wide variety of video games, bouldering or camping with my friends.
                     </p>
                     <section className={style.contact}>
-                        <Contact
+                        <Link
                             href="https://github.com/PerryBaran"
                             src={GitHub.src}
                             caption={GitHub.name}
                         />
-                        <Contact 
+                        <Link 
                             href="mailto:perrybaran@gmail.com"
                             src={at}
                             caption="perrybaran@gmail.com"
                         />
-                        <Contact
+                        <Link
                             href="https://drive.google.com/file/d/1vmQDnvjXqyskpUeLhpW4re1_56tEkF68/view"
                             src={cv}
                             caption="CV"
                         />
                     </section>
                 </div>
-                <img src={require('../../media/images/Profile.jpg')} alt="Perry Baran profile"/>
+                <img src={profile} alt="Perry Baran profile" className={style.profile}/>
             </div>
         </section>
     );

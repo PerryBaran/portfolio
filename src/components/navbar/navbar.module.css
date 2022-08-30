@@ -10,15 +10,11 @@
 }
 
 .linkContainer a {
-    all: unset;
-
     color: var(--colour-light);
         
     font-family: 'Roboto Mono', monospace;
     text-transform: uppercase;
     font-weight: 100;
-
-    cursor: pointer;
 }
 
 .linkContainer a:hover {

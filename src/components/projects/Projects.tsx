@@ -1,14 +1,17 @@
 import Project from "./project/Project";
 import style from './projects.module.css';
 import {CSS3, Firebase, HTML5, Jest, JavaScript, React, TypeScript} from '../../media/logos/index';
+import { dodl, jenico, onlineStore, weatherApp } from '../../media/images/index';
 
 function Projects() {
     return (
         <section id="projects" className={style.container}>
-            <h2>Projects</h2>
+            <div className='sticky'>
+                <h2>Projects</h2>
+            </div>
             <div>
                 <Project 
-                    projectSrc={require('../../media/images/DoDL.jpg')}
+                    projectSrc={dodl}
                     projectTitle={'Music Player'}
                     projectDescription={'Music and video player. Created in React, unit tests with Jest and React Testing Library. Used Firebase for cloud storage of songs and video.'}
                     skills={[
@@ -20,7 +23,7 @@ function Projects() {
                     livehref={'https://perrybaran.github.io/dodl/'}
                 />
                 <Project 
-                    projectSrc={require('../../media/images/Jenico.jpg')}
+                    projectSrc={jenico}
                     projectTitle={'Musciains Website'}
                     projectDescription={'Took a lot of the music player functionality in the last project and turned into a full website. Created in React and Typesript.'}
                     skills={[
@@ -32,7 +35,7 @@ function Projects() {
                     livehref={'https://perrybaran.github.io/jenico/'}
                 />
                 <Project 
-                    projectSrc={require('../../media/images/Weather App.jpg')}
+                    projectSrc={weatherApp}
                     projectTitle={'Weather App'}
                     projectDescription={"Weather app created in Javascript. Gets weather data from OpenWeatherMap's Weather API."}
                     skills={[
@@ -44,7 +47,7 @@ function Projects() {
                     livehref={'https://perrybaran.github.io/weatherapp/'}
                 />
                 <Project 
-                    projectSrc={require('../../media/images/Online Store.jpg')}
+                    projectSrc={onlineStore}
                     projectTitle={'Online Store'}
                     projectDescription={'UI for an online videogame key seller. Made in React and my first project to use React BrowserRouter.'}
                     skills={[
@@ -56,7 +59,6 @@ function Projects() {
                     livehref={'https://perrybaran.github.io/shopping-cart/#/'}
                 />            
             </div>
-            
         </section>
     );
 };

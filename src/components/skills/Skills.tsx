@@ -5,7 +5,9 @@ import { CSS3, Firebase, GitHub, HTML5, Jest, JavaScript, React, TypeScript, Git
 function Skills() {
     return(
         <section id="skills" className={style.container}>
-            <h2>Skills</h2>
+            <div className='sticky'>
+                <h2>Skills</h2>
+            </div>
             <section>
                 <h3>Main Skills</h3>
                 <div className={style.iconContainer}>

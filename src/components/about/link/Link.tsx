@@ -1,6 +1,6 @@
-import style from './contact.module.css';
+import style from './link.module.css';
 
-function Contact(props: {href: string, src: string, caption: string}) {
+function Link(props: {href: string, src: string, caption: string}) {
     const {href, src, caption} = props
 
     return (
@@ -13,4 +13,4 @@ function Contact(props: {href: string, src: string, caption: string}) {
     );
 }
 
-export default Contact;
+export default Link;

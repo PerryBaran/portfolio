@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import style from './navbar.module.css';
+import { menu } from '../../media/icons/index';
 
 function NavBar() {
     const [visible, setVisibility] = useState(false);
@@ -11,7 +12,7 @@ function NavBar() {
     return (
         <>  
         <div className={style.buttonContainer}>
-            <button onClick={clickHandler}><img src={require('../../media/icons/menu.png')} alt='menu'/></button>
+            <button onClick={clickHandler}><img src={menu} alt='menu'/></button>
         </div>
         <div className={style.navContainer}>
             <nav className={`${style.linkContainer} ${visible ? undefined : style.hidden}`}>

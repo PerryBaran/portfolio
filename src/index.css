@@ -11,17 +11,16 @@
   --colour-light: rgb(0, 158, 250);
   --colour-dark: rgb(0, 47, 78);
   --scroll-bar-width: 15px;
-  --h2-offset: -10px;
 }
 
 body {
   height: 100vh;
-  
 }
 
 body > div {
   height: 100%;
   width: 100%;
+
   scroll-behavior:smooth;
   overflow: auto;
 }
@@ -46,29 +45,8 @@ button {
 }
 
 a {
+  all: unset;
   cursor: pointer;
-}
-
-h2 {
-  display:inline-block;
-
-  position: -webkit-sticky;
-  position: sticky;
-  top: var(--h2-offset);
-  left: 0px;
-  
-  height: auto;
-  width: 100%;
-  padding-left: 5px;
-
-  color: var(--colour-dark);
-  font-family: 'Roboto Mono', monospace;
-  font-size: 50px;
-  font-weight: 1000;
-  text-transform:uppercase;
-
-  pointer-events: none;
-  z-index: 11000;
 }
 
 img {
@@ -78,4 +56,33 @@ img {
 section {
   display: block;
   position: relative;
+}
+
+h2 {
+  display:inline-block;
+  
+  position: relative;
+  top: -10px;
+  
+  width: 100%;
+  padding-left: 5px;
+
+  color: var(--colour-dark);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 50px;
+  font-weight: 1000;
+  text-transform: uppercase;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0px;
+
+  width: 100%;
+  max-width: 100%;
+  
+  z-index: 11000;
+  pointer-events: none;
 }
