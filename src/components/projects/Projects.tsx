@@ -25,7 +25,7 @@ function Projects() {
                 <Project 
                     projectSrc={jenico}
                     projectTitle={'Musciains Website'}
-                    projectDescription={'Took a lot of the music player functionality in the last project and turned into a full website. Created in React and Typesript.'}
+                    projectDescription={'A musicians personal website, implements the functionality from Music Player. Created in React and Typesript. Uses Firebase for song hosting.'}
                     skills={[
                         React,
                         TypeScript,

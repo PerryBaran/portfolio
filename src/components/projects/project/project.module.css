@@ -47,20 +47,20 @@
     font-weight: 100;
     font-family: 'Roboto Mono', monospace;
     text-transform: uppercase;
+
+    box-shadow: inset 0 0 0 0 var(--colour-dark);
+
+    transition-timing-function: ease-out;
+    transition-duration: 250ms;
 }
 
 .container a:hover {
     color: white;
-    background-color: var(--colour-dark);
+    box-shadow: inset 200px 0 0 0 var(--colour-dark);
 }
 
 .container ul {
     margin-top: 40px;
-}
-
-.container ul img {
-    height: 75px;
-    z-index: 5000;
 }
 
 .container ul {
@@ -75,6 +75,20 @@
 
 .container li {
     all: unset;
-    height: fit-content;
+    display: flex;
+
+    height: 100px;
+    width: 110px;
+
     z-index: 200;
+}
+
+.container li img {
+    height: 75px;
+    transition-duration: 300ms;
+    z-index: 5000;
+}
+
+.container li img:hover {
+    height: 90px;
 }
