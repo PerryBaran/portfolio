@@ -19,6 +19,12 @@ const React = new Logo(require('./React.png'), 'React');
 const TypeScript = new Logo(require('./Typescript.png'), 'Typescript');
 const Git = new Logo(require('./Git.png'), 'Git');
 const Node = new Logo(require('./Node-js.png'), 'Node.js');
+const Mocha = new Logo(require('./Mocha.png'), 'Mocha');
+const Docker = new Logo(require('./Docker.png'), 'Docker');
+const MySQL = new Logo(require('./MySQL.png'), 'MySQL');
+const Sequelize = new Logo(require('./Sequelize.png'), 'Sequelize');
+const Express = new Logo(require('./Express-js.png'), 'Express.js');
+const Postman = new Logo(require('./Postman.png'), 'Postman');
 
 
-export { CSS3, Firebase, GitHub, HTML5, Jest, JavaScript, React, TypeScript, Git, Node };
+export { CSS3, Firebase, GitHub, HTML5, Jest, JavaScript, React, TypeScript, Git, Node, Mocha, Docker, MySQL, Sequelize, Express, Postman };
