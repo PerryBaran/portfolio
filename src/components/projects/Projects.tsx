@@ -1,7 +1,7 @@
 import Project from "./project/Project";
 import style from './projects.module.css';
-import {CSS3, Firebase, HTML5, Jest, JavaScript, React, TypeScript} from '../../media/logos/index';
-import { dodl, jenico, onlineStore, weatherApp } from '../../media/images/index';
+import {CSS3, Firebase, Jest, JavaScript, React, TypeScript, MySQL, Express, Mocha} from '../../media/logos/index';
+import { dodl, jenico, onlineStore, musicLibrary } from '../../media/images/index';
 
 function Projects() {
     return (
@@ -25,7 +25,7 @@ function Projects() {
                 <Project 
                     projectSrc={jenico}
                     projectTitle={'Musciains Website'}
-                    projectDescription={'A musicians personal website, implements the functionality from Music Player. Created in React and Typesript. Uses Firebase for song hosting.'}
+                    projectDescription={' A personal website to showcase my music. Created in React and Typescript. Uses Firebase cloud storage for hosting of music files, EmailJS for contacts form.'}
                     skills={[
                         React,
                         TypeScript,
@@ -35,21 +35,20 @@ function Projects() {
                     livehref={'https://perrybaran.github.io/jenico/'}
                 />
                 <Project 
-                    projectSrc={weatherApp}
-                    projectTitle={'Weather App'}
-                    projectDescription={"Weather app created in Javascript. Gets weather data from OpenWeatherMap's Weather API."}
+                    projectSrc={musicLibrary}
+                    projectTitle={'Music Library'}
+                    projectDescription={'An Express.js API that interacts with a mySQL database via CRUD requests to store and interact with data containing artists and albums information. TDD using Mocha at the forefront of the development process.'}
                     skills={[
-                        JavaScript,
-                        HTML5,
-                        CSS3,
+                        MySQL,
+                        Express,
+                        Mocha,
                     ]}
-                    repohref={'https://github.com/PerryBaran/weatherapp'}
-                    livehref={'https://perrybaran.github.io/weatherapp/'}
+                    repohref={'https://github.com/PerryBaran/music-library'}
                 />
                 <Project 
                     projectSrc={onlineStore}
                     projectTitle={'Online Store'}
-                    projectDescription={'UI for an online videogame key seller. Made in React and my first project to use React BrowserRouter.'}
+                    projectDescription={'UI for an online video game key reseller, with working shopping cart. Created in React, and my first project using React Browser Router.'}
                     skills={[
                         React,
                         JavaScript,

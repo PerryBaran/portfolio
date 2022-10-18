@@ -7,7 +7,7 @@ interface Props {
     projectDescription: string,
     skills: LogoInfo[],
     repohref: string,
-    livehref: string
+    livehref?: string
 }
 
 function Project(props: Props) {
@@ -32,7 +32,7 @@ function Project(props: Props) {
                     }))}
                 </ul>
                 <a href={repohref} target="_blank" rel="noreferrer">Repository</a>
-                <a href={livehref} target="_blank" rel="noreferrer">Live Preview</a>
+                {livehref && <a href={livehref} target="_blank" rel="noreferrer">Live Preview</a>}
             </div>
         </section>
     );
