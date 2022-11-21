@@ -25,7 +25,7 @@ function Project(props: Props) {
             <img src={projectSrc} alt={`${projectTitle} page`}/>
             <div>
                 <h3>{projectTitle}</h3>
-                <p>{projectDescription}</p>
+                <p className={style.description}>{projectDescription}</p>
                 <ul>
                     {skills.map(((skill, i) => {
                         return <li key={i}><img src={skill.src} alt={skill.name}/></li>

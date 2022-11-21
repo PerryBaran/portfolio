@@ -1,7 +1,7 @@
 import Project from "./project/Project";
 import style from './projects.module.css';
 import { CSS3, Firebase, JavaScript, React, TypeScript, MySQL, Express, Mocha, Sequelize } from '../../media/logos/index';
-import { jenico, onlineStore, musicLibrary, bookLibrary } from '../../media/images/index';
+import { jenico, weatherApp, musicLibrary, bookLibrary } from '../../media/images/index';
 
 function Projects() {
     return (
@@ -23,16 +23,16 @@ function Projects() {
                     livehref={'https://perrybaran.github.io/jenico/'}
                 />
                 <Project
-                    projectSrc={onlineStore}
-                    projectTitle={'Online Store'}
-                    projectDescription={'UI for an online video game key reseller, with working shopping cart. Created in React, and my first project using React Browser Router.'}
+                    projectSrc={weatherApp}
+                    projectTitle={'Weather App'}
+                    projectDescription={'React app that interacts with OpenWeatherMap’s API to get up to date weather forecast data and displays it granularly. TDD using Jest and react-testing-library followed throughout.'}
                     skills={[
                         React,
                         JavaScript,
                         CSS3,
                     ]}
-                    repohref={'https://github.com/PerryBaran/shopping-cart'}
-                    livehref={'https://perrybaran.github.io/shopping-cart/#/'}
+                    repohref={'https://github.com/PerryBaran/weather-app'}
+                    livehref={'https://perrybaran.github.io/weather-app/'}
                 />
                 <Project 
                     projectSrc={musicLibrary}
