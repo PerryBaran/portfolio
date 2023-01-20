@@ -13,31 +13,31 @@ function About() {
             <div className={style.content}>
                 <div>
                     <p>Hi, I'm Perry, a full-stack web developer based in Leeds. I started my coding journey in 2021, 
-                        following the Oden Project (a free online course), and quickly fell in 
-                        love with it. Currently, I am a studying full-stack web development at Manchester Codes, 
-                        with the aim of taking my hobby for coding into a career in web-development. When I'm not coding, you can find me 
-                        making <a href="https://perrybaran.github.io/jenico/" target="_blank" rel="noreferrer">electronic music</a> playing
-                        a wide variety of video games, bouldering or camping with my friends.
+                        following the Oden Project (a free online course), and quickly fell in love with it. 
+                        In 2022, I joined the Command Shift (formerly Manchester Codes) full-stack coding bootcamp,
+                        from which I have recently graduated. My other hobbies include, 
+                        making <a href='https://perrybaran.github.io/jenico/' target='_blank' rel='noreferrer'>electronic music</a>, video games,
+                        bouldering, camping and hiking.
                     </p>
                     <section className={style.contact}>
                         <Link
-                            href="https://github.com/PerryBaran"
+                            href='https://github.com/PerryBaran'
                             src={GitHub.src}
                             caption={GitHub.name}
                         />
                         <Link 
-                            href="mailto:perrybaran@gmail.com"
+                            href='mailto:perrybaran@gmail.com'
                             src={at}
-                            caption="perrybaran@gmail.com"
+                            caption='perrybaran@gmail.com'
                         />
                         <Link
-                            href="https://drive.google.com/file/d/1vmQDnvjXqyskpUeLhpW4re1_56tEkF68/view"
+                            href='https://drive.google.com/file/d/1-kc-9scIZMWALchzWS7Y5UXjalgmiT_a/view?usp=sharing'
                             src={cv}
-                            caption="CV"
+                            caption='CV'
                         />
                     </section>
                 </div>
-                <img src={profile} alt="Perry Baran profile" className={style.profile}/>
+                <img src={profile} alt='Perry Baran profile' className={style.profile}/>
             </div>
         </section>
     );

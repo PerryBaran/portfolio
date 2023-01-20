@@ -1,27 +1,30 @@
-import style from './project.module.css';
+import style from './videoProject.module.css';
 import { LogoInfo } from '../../../Interfaces';
+import YoutubeEmbed from '../../youtube/YouTube';
 
 interface Props {
-    projectSrc: string,
-    projectTitle: string,
-    projectDescription: string,
-    skills: LogoInfo[],
-    children?: React.ReactNode,
+  projectTitle: string,
+  projectDescription: string,
+  video: string,
+  skills: LogoInfo[],
+  children?: React.ReactNode,
 }
 
-function Project(props: Props) {
+function VideoProject(props: Props) {
     const {
-        projectSrc,
         projectTitle,
         projectDescription,
         skills,
+        video,
         children
     } = props
 
     return(
         <section className={style.container}>
-            <img src={projectSrc} alt={`${projectTitle} page`}/>
-            <div>
+            <div className={style.video}>
+              <YoutubeEmbed embedId={video} />
+            </div>
+            <div className={style.info}>
                 <h3>{projectTitle}</h3>
                 <p className={style.description}>{projectDescription}</p>
                 <ul>
@@ -35,4 +38,4 @@ function Project(props: Props) {
     );
 };
 
-export default Project
+export default VideoProject;
