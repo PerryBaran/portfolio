@@ -31,7 +31,7 @@ function About() {
                             caption='perrybaran@gmail.com'
                         />
                         <Link
-                            href='https://drive.google.com/file/d/1-kc-9scIZMWALchzWS7Y5UXjalgmiT_a/view?usp=sharing'
+                            href='https://drive.google.com/file/d/1VTMMflnNRxLFnwPuL384cdi0x_REASsM/view?usp=sharing'
                             src={cv}
                             caption='CV'
                         />
