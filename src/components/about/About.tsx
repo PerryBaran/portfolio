@@ -15,9 +15,9 @@ function About() {
                     <p>Hi, I'm Perry, a full-stack web developer based in Leeds. I started my coding journey in 2021, 
                         following the Oden Project (a free online course), and quickly fell in love with it. 
                         In 2022, I joined the Command Shift (formerly Manchester Codes) full-stack coding bootcamp,
-                        from which I have recently graduated. My other hobbies include, 
-                        making <a href='https://perrybaran.github.io/jenico/' target='_blank' rel='noreferrer'>electronic music</a>, video games,
-                        bouldering, camping and hiking.
+                        from which I have recently graduated. Currently I am a tutor at Command Shift, this involves:
+                        giving lectures on the fundamentals of coding and web development, supporting students with their questions
+                        and issues in and out of lectures and providing feedback to students on their progess through code-reviews.
                     </p>
                     <section className={style.contact}>
                         <Link
