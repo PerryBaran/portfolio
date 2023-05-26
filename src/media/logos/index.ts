@@ -24,9 +24,9 @@ const Docker = new Logo(require('./Docker.png'), 'Docker');
 const MySQL = new Logo(require('./MySQL.png'), 'MySQL');
 const Sequelize = new Logo(require('./Sequelize.png'), 'Sequelize');
 const Express = new Logo(require('./Express-js.png'), 'Express.js');
-const Postman = new Logo(require('./Postman.png'), 'Postman');
 const AWS = new Logo(require('./AWS.png'), 'AWS');
 const PostgreSQL = new Logo(require('./Postgresql.png'), 'PostgreSQL');
+const NextJS = new Logo(require('./NextJS.png'), 'Next JS')
 
 
-export { CSS3, Firebase, GitHub, HTML5, Jest, JavaScript, React, TypeScript, Git, Node, Mocha, Docker, MySQL, Sequelize, Express, Postman, AWS, PostgreSQL };
+export { CSS3, Firebase, GitHub, HTML5, Jest, JavaScript, React, TypeScript, Git, Node, Mocha, Docker, MySQL, Sequelize, Express, AWS, PostgreSQL, NextJS };

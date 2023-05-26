@@ -1,6 +1,6 @@
 import style from './skills.module.css';
 import Icon from './icon/Icon';
-import { CSS3, Firebase, GitHub, HTML5, Jest, JavaScript, React, TypeScript, Git, Node, Mocha, Docker, MySQL, Sequelize, Express, Postman, AWS, PostgreSQL } from '../../media/logos/index';
+import { CSS3, Firebase, GitHub, HTML5, Jest, JavaScript, React, TypeScript, Git, Node, Mocha, Docker, MySQL, Sequelize, Express, AWS, PostgreSQL, NextJS } from '../../media/logos/index';
 
 function Skills() {
     return(
@@ -22,6 +22,7 @@ function Skills() {
                 <div className={style.iconContainer}>
                     <Icon icon={HTML5}/>
                     <Icon icon={CSS3}/>
+                    <Icon icon={NextJS}/>
                     <Icon icon={Jest}/>
                     <Icon icon={Mocha}/>
                     <Icon icon={Git}/>
@@ -33,7 +34,6 @@ function Skills() {
                     <Icon icon={PostgreSQL} />
                     <Icon icon={Sequelize}/>
                     <Icon icon={Express}/>
-                    <Icon icon={Postman}/>
                 </div>
             </section>
         </section>
