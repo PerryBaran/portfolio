@@ -30,8 +30,7 @@ function Projects() {
                 >
                     <div>
                         <a href='https://github.com/ngiannotta84/soundcloud-clone' target='_blank' rel='noreferrer'>Front-End Repo</a>
-                        <a href='https://github.com/PerryBaran/soundcloud-clone-api' target='_blank' rel='noreferrer'>Back-End Repo</a>
-                        <a href='https://ngiannotta84.github.io/soundcloud-clone/' target='_blank' rel='noreferrer'>Live Preview</a>                        
+                        <a href='https://github.com/PerryBaran/soundcloud-clone-api' target='_blank' rel='noreferrer'>Back-End Repo</a>                  
                     </div>
                 </VideoProject>
                 <Project
